@@ -24,7 +24,22 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
+admin.py
+from django.contrib import admin
+from .models import Football_player,Football_playerAdmin
+admin.site.register(Football_player,Football_playerAdmin)
 
+models.py
+from django.db import models
+from django.contrib import admin
+class Football_player(models.Model):
+    Name=models.CharField(max_length=15)
+    Age=models.IntegerField()
+    DOB=models.CharField(max_length=10)
+    Jerseynumber=models.IntegerField()
+    Email=models.EmailField()
+class Football_playerAdmin(admin.ModelAdmin):
+    list_display=('Name','Age','DOB','Jerseynumber','Email')
 
 ## OUTPUT
 
