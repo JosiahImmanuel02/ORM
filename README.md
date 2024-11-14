@@ -43,7 +43,8 @@ class Football_playerAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![output](https://github.com/user-attachments/assets/5d80813d-2f29-4cfa-afad-b73eea555290)
+
 
 
 ## RESULT
